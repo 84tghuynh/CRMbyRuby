@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <header>
+        <%= render partial: 'common/header'%>
+      </header>
+      <section>
+        <div class="row d-flex justify-content-center">
+        <%= yield %>
+        </div>
+      </section>
+    </div>
+
   </body>
 </html>
