@@ -4,7 +4,7 @@ ActiveAdmin.register Customer do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :fullname, :phonenumber, :email, :notes
+  # permit_params :fullname, :phonenumber, :email, :notes
   #
   # or
   #
@@ -13,4 +13,6 @@ ActiveAdmin.register Customer do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
+
+  permit_params :fullname, :phonenumber, :email, :notes, :image
 end
